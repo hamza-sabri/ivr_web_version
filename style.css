@@ -1,0 +1,21 @@
+body {
+    background-color: #F5F5F5;
+}
+
+.centeredContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.demo-card-wide.mdl-card {
+    width: 512px;
+}
+.demo-card-wide > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('https://miro.medium.com/max/5760/1*X0YAhnDmAmUXec83Y1IDZA.jpeg') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+    color: #fff;
+}
