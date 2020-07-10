@@ -1,0 +1,101 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*The card styling*/
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18%;
+}
+
+.demo-card-wide.mdl-card {
+    width: 512px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-radius: 18px;
+}
+
+#login {
+    padding-bottom: 10px;
+}
+
+#login:hover {
+    box-shadow: 2px 4px 4px 2px #8e8e8e;
+}
+
+/*End of the card styling*/
+
+/*The registration button styling*/
+#register {
+    text-align: center;
+    move-to: 50px;
+    margin-bottom: 10px;
+    background-color: rgb(1, 193, 242);
+    padding: 8px 6px;
+    border-radius: 5px;
+    width: 98%;
+    color: #ffffff;
+    font-size: 20px;
+    height: 25px;
+}
+
+#register:hover {
+    background-color: rgb(8, 215, 242)
+}
+
+#title {
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 16px;
+}
+
+/*End of the registration button styling*/
+
+/*Images styling*/
+#login1-img {
+    right: 25px;
+    bottom: 295px;
+}
+
+#login2-img {
+    right: 25px;
+    top: -280px;
+}
+
+#login3-img {
+    left: 25px;
+    bottom: 280px;
+}
+
+#login4-img {
+    left: 25px;
+    top: -280px;
+}
+
+.cornered-image {
+    width: 15%;
+    height: 220px;
+    position: absolute;
+}
+
+.swal-text {
+    text-align: center;
+}
+
+.swal-footer {
+    text-align: center;
+}
+
+
+
+

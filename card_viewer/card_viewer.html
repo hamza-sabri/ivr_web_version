@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Viewer</title>
+    <script src="../animations/animation.js"></script>
+    <link href="../animations/animation.css" rel="stylesheet">
+    <title>Card Viewer</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" rel="stylesheet">
+    <link href="card_styles.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body onload="initializeAnimations()">
+<div class="container">
+    <div class="popup" id="popup">
+        <div class="popup-inner">
+            <a class="popup-close" href="#"><span>X</span></a>
+            <div class="popup-photo">
+                <img alt="student" src="../images/test.jpg">
+            </div>
+            <div class="popup-text">
+                <h4>Add a new material</h4>
+                <div class="inner-content">
+                    <div class="first-page">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+                             style="width: 100%;color: black;">
+                            <input class="mdl-textfield__input" id="material-name" type="text">
+                            <label class="mdl-textfield__label" for="material-name">Material name</label>
+                        </div>
+
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+                             style="width: 100%;">
+                            <input class="mdl-textfield__input" id="material-number" type="text">
+                            <label class="mdl-textfield__label" for="material-number">Material number</label>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+                             style="width: 100%;">
+                            <input class="mdl-textfield__input" id="material-image" type="url">
+                            <label class="mdl-textfield__label" for="material-image">Material image link</label>
+                        </div>
+                        <div id="image-displayer">
+                            <img src="https://cdn.dribbble.com/users/2281811/screenshots/5972252/group_porject_kortext_dribble_2x.jpg">
+                        </div>
+                        <a class="next" href="#popup" onclick="moveNext()"><span>next</span></a>
+                    </div>
+                    <div class="second-page">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+                             style="width: 100%;color: black;">
+                            <input class="mdl-textfield__input" id="department" type="text">
+                            <label class="mdl-textfield__label" for="department">Department name</label>
+                        </div>
+                        <a class="finish" href="#popup"><span>finish</span></a>
+                        <a class="previous" href="#popup" onclick="moveBack()"><span>previous</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<a href="#popup" id="fab" onclick="startBouncing()" style="text-decoration: none;">
+    <span class="msg" id="msg">Add a new card</span>
+    <div class="inner-span">
+        <span>+</span>
+    </div>
+</a>
+
+
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+<script src="card_viewer_actions.js"></script>
+
+</body>
+</html>
